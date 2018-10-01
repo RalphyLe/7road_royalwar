@@ -326,9 +326,12 @@
     <Compile Include="Assets\Assets\Scripts\Definition\Constant\Constant.Layer.cs" />
     <Compile Include="Assets\Assets\Scripts\Definition\Constant\Constant.ProcedureData.cs" />
     <Compile Include="Assets\Assets\Scripts\Definition\Constant\Constant.Setting.cs" />
+    <Compile Include="Assets\Assets\Scripts\Procedure\DRScene.cs" />
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedureBase.cs" />
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedureChangeScene.cs" />
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedureLaunch.cs" />
+    <Compile Include="Assets\Assets\Scripts\Procedure\ProcedureMain.cs" />
+    <Compile Include="Assets\Assets\Scripts\Procedure\ProcedureMenu.cs" />
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedurePreload.cs" />
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedureSplash.cs" />
     <Compile Include="Assets\Assets\Scripts\Utility\AssetUtility.cs" />
