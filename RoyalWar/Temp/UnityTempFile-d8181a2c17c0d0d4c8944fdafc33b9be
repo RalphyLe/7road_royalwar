@@ -1,0 +1,387 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/UnityGameFramework.Runtime.dll
+-nostdlib
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.AudioModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.BaselibModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.FacebookModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.GridModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.InputModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.TLSModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.TimelineModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.UIModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.UNETModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.VRModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.VideoModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.WebModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.WindModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/UnityEditor.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\Managed/Unity.Locator.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/Managed/UnityEditor.Graphs.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
+-r:"D:/Program Files/Unity2018/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
+-r:Assets/GameFramework/Libraries/GameFramework.dll
+-r:Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll
+-r:C:/Users/Ralphy/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll
+-r:C:/Users/Ralphy/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
+-r:C:/Users/Ralphy/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
+-r:C:/Users/Ralphy/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll
+-r:C:/Users/Ralphy/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll
+-r:C:/Users/Ralphy/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
+-r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/2015/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\unity\mscorlib.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Core.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.Linq.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll"
+-r:"D:\Program Files\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_6_OR_NEWER
+-define:UNITY_2017_1_OR_NEWER
+-define:UNITY_2017_2_OR_NEWER
+-define:UNITY_2017_3_OR_NEWER
+-define:UNITY_2018_1_OR_NEWER
+-define:UNITY_2018_1_1
+-define:UNITY_2018_1
+-define:UNITY_2018
+-define:PLATFORM_ARCH_64
+-define:UNITY_64
+-define:UNITY_ANALYTICS
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_GRID
+-define:ENABLE_TILEMAP
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_DIRECTOR
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_HUB
+-define:ENABLE_EDITOR_HUB_LICENSE
+-define:ENABLE_WEBSOCKET_CLIENT
+-define:ENABLE_DIRECTOR_AUDIO
+-define:ENABLE_DIRECTOR_TEXTURE
+-define:ENABLE_TIMELINE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:ENABLE_MANAGED_JOBS
+-define:ENABLE_MANAGED_TRANSFORM_JOBS
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:ENABLE_MONO_BDWGC
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_VIDEO
+-define:ENABLE_PACKMAN
+-define:ENABLE_CUSTOM_RENDER_TEXTURE
+-define:ENABLE_LOCALIZATION
+-define:PLATFORM_STANDALONE_WIN
+-define:PLATFORM_STANDALONE
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_VR
+-define:ENABLE_AR
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:NET_2_0_SUBSET
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:ENABLE_UNITY_COLLECTIONS_CHECKS
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+-define:UNITY_PRO_LICENSE
+-define:UNITY_POST_PROCESSING_STACK_V2
+Assets/GameFramework/Scripts/Runtime/Base/AvoidJIT.cs
+Assets/GameFramework/Scripts/Runtime/Base/BaseComponent.cs
+Assets/GameFramework/Scripts/Runtime/Base/GameEntry.cs
+Assets/GameFramework/Scripts/Runtime/Base/GameFrameworkComponent.cs
+Assets/GameFramework/Scripts/Runtime/Base/ReferencePoolComponent.cs
+Assets/GameFramework/Scripts/Runtime/Base/ShutdownType.cs
+Assets/GameFramework/Scripts/Runtime/Config/ConfigComponent.cs
+Assets/GameFramework/Scripts/Runtime/Config/ConfigHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/Config/DefaultConfigHelper.cs
+Assets/GameFramework/Scripts/Runtime/Config/LoadConfigDependencyAssetEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Config/LoadConfigFailureEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Config/LoadConfigInfo.cs
+Assets/GameFramework/Scripts/Runtime/Config/LoadConfigSuccessEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Config/LoadConfigUpdateEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/DataNode/DataNodeComponent.cs
+Assets/GameFramework/Scripts/Runtime/DataTable/DataTableComponent.cs
+Assets/GameFramework/Scripts/Runtime/DataTable/DataTableHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/DataTable/DefaultDataTableHelper.cs
+Assets/GameFramework/Scripts/Runtime/DataTable/LoadDataTableDependencyAssetEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/DataTable/LoadDataTableFailureEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/DataTable/LoadDataTableInfo.cs
+Assets/GameFramework/Scripts/Runtime/DataTable/LoadDataTableSuccessEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/DataTable/LoadDataTableUpdateEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerActiveWindowType.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.ConsoleWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.ConsoleWindow.LogNode.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.EnvironmentInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.FpsCounter.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.GraphicsInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.InputAccelerationInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.InputCompassInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.InputGyroscopeInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.InputLocationInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.InputSummaryInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.InputTouchInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.ObjectPoolInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.OperationsWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.PathInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.ProfilerInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.QualityInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.RuntimeMemoryInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.RuntimeMemoryInformationWindow.Sample.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.SceneInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.ScreenInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.ScrollableDebuggerWindowBase.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.SettingsWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.SystemInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.TimeInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.WebPlayerInformationWindow.cs
+Assets/GameFramework/Scripts/Runtime/Download/DefaultDownloadAgentHelper.cs
+Assets/GameFramework/Scripts/Runtime/Download/DownloadAgentHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/Download/DownloadComponent.cs
+Assets/GameFramework/Scripts/Runtime/Download/DownloadFailureEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Download/DownloadStartEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Download/DownloadSuccessEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Download/DownloadUpdateEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Download/UnityWebRequestDownloadAgentHelper.cs
+Assets/GameFramework/Scripts/Runtime/Entity/AttachEntityInfo.cs
+Assets/GameFramework/Scripts/Runtime/Entity/DefaultEntityGroupHelper.cs
+Assets/GameFramework/Scripts/Runtime/Entity/DefaultEntityHelper.cs
+Assets/GameFramework/Scripts/Runtime/Entity/Entity.cs
+Assets/GameFramework/Scripts/Runtime/Entity/EntityComponent.cs
+Assets/GameFramework/Scripts/Runtime/Entity/EntityComponent.EntityGroup.cs
+Assets/GameFramework/Scripts/Runtime/Entity/EntityGroupHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/Entity/EntityHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/Entity/EntityLogic.cs
+Assets/GameFramework/Scripts/Runtime/Entity/HideEntityCompleteEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Entity/ShowEntityDependencyAssetEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Entity/ShowEntityFailureEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Entity/ShowEntityInfo.cs
+Assets/GameFramework/Scripts/Runtime/Entity/ShowEntitySuccessEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Entity/ShowEntityUpdateEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Event/EventComponent.cs
+Assets/GameFramework/Scripts/Runtime/Fsm/FsmComponent.cs
+Assets/GameFramework/Scripts/Runtime/Localization/DefaultLocalizationHelper.cs
+Assets/GameFramework/Scripts/Runtime/Localization/LoadDictionaryDependencyAssetEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Localization/LoadDictionaryFailureEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Localization/LoadDictionaryInfo.cs
+Assets/GameFramework/Scripts/Runtime/Localization/LoadDictionarySuccessEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Localization/LoadDictionaryUpdateEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Localization/LocalizationComponent.cs
+Assets/GameFramework/Scripts/Runtime/Localization/LocalizationHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/Network/NetworkClosedEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Network/NetworkComponent.cs
+Assets/GameFramework/Scripts/Runtime/Network/NetworkConnectedEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Network/NetworkCustomErrorEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Network/NetworkErrorEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Network/NetworkMissHeartBeatEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/ObjectPool/ObjectPoolComponent.cs
+Assets/GameFramework/Scripts/Runtime/Procedure/ProcedureComponent.cs
+Assets/GameFramework/Scripts/Runtime/Resource/DefaultLoadResourceAgentHelper.cs
+Assets/GameFramework/Scripts/Runtime/Resource/DefaultResourceHelper.cs
+Assets/GameFramework/Scripts/Runtime/Resource/EditorResourceComponent.cs
+Assets/GameFramework/Scripts/Runtime/Resource/LoadResourceAgentHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/Resource/ReadWritePathType.cs
+Assets/GameFramework/Scripts/Runtime/Resource/ResourceComponent.cs
+Assets/GameFramework/Scripts/Runtime/Resource/ResourceHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/Resource/ResourceUpdateChangedEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Resource/ResourceUpdateFailureEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Resource/ResourceUpdateStartEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Resource/ResourceUpdateSuccessEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Resource/SceneAsset.cs
+Assets/GameFramework/Scripts/Runtime/Scene/LoadSceneDependencyAssetEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Scene/LoadSceneFailureEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Scene/LoadSceneSuccessEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Scene/LoadSceneUpdateEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Scene/SceneComponent.cs
+Assets/GameFramework/Scripts/Runtime/Scene/UnloadSceneFailureEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Scene/UnloadSceneSuccessEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Setting/DefaultSettingHelper.cs
+Assets/GameFramework/Scripts/Runtime/Setting/SettingComponent.cs
+Assets/GameFramework/Scripts/Runtime/Setting/SettingHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/Sound/DefaultSoundAgentHelper.cs
+Assets/GameFramework/Scripts/Runtime/Sound/DefaultSoundGroupHelper.cs
+Assets/GameFramework/Scripts/Runtime/Sound/DefaultSoundHelper.cs
+Assets/GameFramework/Scripts/Runtime/Sound/PlaySoundDependencyAssetEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Sound/PlaySoundFailureEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Sound/PlaySoundInfo.cs
+Assets/GameFramework/Scripts/Runtime/Sound/PlaySoundSuccessEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Sound/PlaySoundUpdateEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/Sound/SoundAgentHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/Sound/SoundComponent.cs
+Assets/GameFramework/Scripts/Runtime/Sound/SoundComponent.SoundGroup.cs
+Assets/GameFramework/Scripts/Runtime/Sound/SoundGroupHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/Sound/SoundHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/UI/CloseUIFormCompleteEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/UI/DefaultUIFormHelper.cs
+Assets/GameFramework/Scripts/Runtime/UI/DefaultUIGroupHelper.cs
+Assets/GameFramework/Scripts/Runtime/UI/OpenUIFormDependencyAssetEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/UI/OpenUIFormFailureEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/UI/OpenUIFormSuccessEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/UI/OpenUIFormUpdateEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/UI/UIComponent.cs
+Assets/GameFramework/Scripts/Runtime/UI/UIComponent.UIGroup.cs
+Assets/GameFramework/Scripts/Runtime/UI/UIForm.cs
+Assets/GameFramework/Scripts/Runtime/UI/UIFormHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/UI/UIFormLogic.cs
+Assets/GameFramework/Scripts/Runtime/UI/UIGroupHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/UI/UIIntKey.cs
+Assets/GameFramework/Scripts/Runtime/UI/UIStringKey.cs
+Assets/GameFramework/Scripts/Runtime/Utility/DefaultJsonHelper.cs
+Assets/GameFramework/Scripts/Runtime/Utility/DefaultLogHelper.cs
+Assets/GameFramework/Scripts/Runtime/Utility/DefaultProfilerHelper.cs
+Assets/GameFramework/Scripts/Runtime/Utility/DefaultVersionHelper.cs
+Assets/GameFramework/Scripts/Runtime/Utility/DefaultZipHelper.cs
+Assets/GameFramework/Scripts/Runtime/Utility/Helper.cs
+Assets/GameFramework/Scripts/Runtime/Utility/ProfileUtility.cs
+Assets/GameFramework/Scripts/Runtime/Utility/UnityExtension.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarBool.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarByte.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarBytes.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarChar.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarChars.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarColor.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarDateTime.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarDecimal.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarDouble.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarFloat.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarGameObject.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarInt.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarLong.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarMaterial.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarObject.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarQuaternion.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarRect.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarSByte.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarShort.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarString.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarTexture.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarTransform.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarUInt.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarULong.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarUnityObject.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarUShort.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarVector2.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarVector3.cs
+Assets/GameFramework/Scripts/Runtime/Variable/VarVector4.cs
+Assets/GameFramework/Scripts/Runtime/WebRequest/DefaultWebRequestAgentHelper.cs
+Assets/GameFramework/Scripts/Runtime/WebRequest/UnityWebRequestAgentHelper.cs
+Assets/GameFramework/Scripts/Runtime/WebRequest/WebRequestAgentHelperBase.cs
+Assets/GameFramework/Scripts/Runtime/WebRequest/WebRequestComponent.cs
+Assets/GameFramework/Scripts/Runtime/WebRequest/WebRequestFailureEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/WebRequest/WebRequestStartEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/WebRequest/WebRequestSuccessEventArgs.cs
+Assets/GameFramework/Scripts/Runtime/WebRequest/WWWFormInfo.cs
+-lib:"D:\Program Files\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\unity"
