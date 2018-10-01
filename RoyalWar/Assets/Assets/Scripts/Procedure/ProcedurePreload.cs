@@ -26,6 +26,8 @@ namespace RoyalWar
             Log.Debug("进入ProcedurePreLoad流程");
             base.OnEnter(procedureOwner);
 
+            GameEntry.Event.Subscribe(LoadConfigSuccessEventArgs.EventId, OnLoadConfigSuccess);
+            GameEntry.Event.Subscribe(LoadConfigFailureEventArgs.EventId, OnLoadConfigFailure);
             GameEntry.Event.Subscribe(LoadDataTableSuccessEventArgs.EventId, OnLoadDataTableSuccess);
             GameEntry.Event.Subscribe(LoadDataTableFailureEventArgs.EventId, OnLoadDataTableFailure);
 
@@ -60,17 +62,68 @@ namespace RoyalWar
 
         private void PreLoadResources()
         {
-            throw new NotImplementedException();
+            //Preload configs
+            LoadConfig("DefaultConfig");
+            Log.Info(AssetUtility.GetConfigAsset("DefaultConfig"));
+
+            //Preload UI
+            LoadDataTable("UIForm");
+            Log.Info(AssetUtility.GetDataTableAsset("UIForm"));
         }
 
+        private void LoadDataTable(string v)
+        {
+            _loaded_flag.Add(string.Format("Config.{0}", v), false);
+            GameEntry.Config.LoadConfig(v, this);
+        }
+
+        private void LoadConfig(string v)
+        {
+            _loaded_flag.Add(string.Format("DataTable.{0}", v), false);
+            GameEntry.DataTable.LoadDataTable(v, this);
+        }
+
+        private void OnLoadConfigFailure(object sender, GameEventArgs e)
+        {
+            LoadConfigFailureEventArgs ne = (LoadConfigFailureEventArgs)e;
+            if(ne.UserData != this)
+            {
+                return;
+            }
+
+            Log.Error("Can not load config '{0}' from '{1}' with error message '{2}' ", ne.ConfigName, ne.ConfigAssetName, ne.ErrorMessage);
+        }
+
+        private void OnLoadConfigSuccess(object sender, GameEventArgs e)
+        {
+            LoadConfigSuccessEventArgs ne = (LoadConfigSuccessEventArgs)e;
+            if(ne.UserData != this)
+            {
+                return;
+            }
+
+            _loaded_flag[string.Format("Config.{0}", ne.ConfigName)] = true;
+            Log.Info("Load config '{0}' OK.", ne.ConfigName);
+        }
         private void OnLoadDataTableFailure(object sender, GameEventArgs e)
         {
-            throw new NotImplementedException();
+            LoadDataTableFailureEventArgs ne = (LoadDataTableFailureEventArgs)e;
+            if(ne.UserData != this)
+            {
+                return;
+            }
+            Log.Error("Can not load data table '{0}' from '{1}' with error message '{2}'", ne.DataTableName, ne.DataTableAssetName, ne.ErrorMessage);
         }
 
         private void OnLoadDataTableSuccess(object sender, GameEventArgs e)
         {
-            throw new NotImplementedException();
+            LoadDataTableSuccessEventArgs ne = (LoadDataTableSuccessEventArgs)e;
+            if (ne.UserData != this)
+            {
+                return;
+            }
+            _loaded_flag[string.Format("DataTable.{0}", ne.DataTableAssetName)] = true;
+            Log.Info("Load data table '{0}' OK.", ne.DataTableAssetName);
         }
     }
 }

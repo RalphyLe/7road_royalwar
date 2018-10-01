@@ -337,6 +337,7 @@
     <Compile Include="Assets\Assets\Scripts\Utility\AssetUtility.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Assets\Configs\DefaultConfig.txt" />
     <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
     <None Include="Assets\GameFramework\Libraries\link.xml" />
     <None Include="C:\Users\Ralphy\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
