@@ -346,6 +346,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets\Configs\DefaultConfig.txt" />
+    <None Include="Assets\Assets\Configs\DefaultDictionary.xml" />
+    <None Include="Assets\Assets\DataTables\Scene.txt" />
+    <None Include="Assets\Assets\DataTables\UIForm.txt" />
+    <None Include="Assets\Assets\Localization\ChineseSimplified\Dictionaries\Default.xml" />
+    <None Include="Assets\Assets\Localization\ChineseTraditional\Dictionaries\Default.xml" />
+    <None Include="Assets\Assets\Localization\English\Dictionaries\Default.xml" />
+    <None Include="Assets\Assets\Localization\Korean\Dictionaries\Default.xml" />
     <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
     <None Include="Assets\GameFramework\Libraries\link.xml" />
     <None Include="C:\Users\Ralphy\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />

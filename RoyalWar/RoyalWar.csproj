@@ -321,12 +321,14 @@
     <Compile Include="Assets\Assets\Scripts\Base\GameEntry.Custom.cs" />
     <Compile Include="Assets\Assets\Scripts\Config\ConfigExtension.cs" />
     <Compile Include="Assets\Assets\Scripts\DataTable\DataTableExtension.cs" />
+    <Compile Include="Assets\Assets\Scripts\DataTable\DRScene.cs" />
     <Compile Include="Assets\Assets\Scripts\DataTable\DRUIForm.cs" />
     <Compile Include="Assets\Assets\Scripts\Definition\Constant\Constant.AssetPriority.cs" />
     <Compile Include="Assets\Assets\Scripts\Definition\Constant\Constant.Layer.cs" />
     <Compile Include="Assets\Assets\Scripts\Definition\Constant\Constant.ProcedureData.cs" />
     <Compile Include="Assets\Assets\Scripts\Definition\Constant\Constant.Setting.cs" />
-    <Compile Include="Assets\Assets\Scripts\Procedure\DRScene.cs" />
+    <Compile Include="Assets\Assets\Scripts\Localization\LocalizationExtension.cs" />
+    <Compile Include="Assets\Assets\Scripts\Localization\XmlLocalizationHelper.cs" />
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedureBase.cs" />
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedureChangeScene.cs" />
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedureLaunch.cs" />
@@ -334,10 +336,22 @@
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedureMenu.cs" />
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedurePreload.cs" />
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedureSplash.cs" />
+    <Compile Include="Assets\Assets\Scripts\UI\EnterForm.cs" />
+    <Compile Include="Assets\Assets\Scripts\UI\UGUiForm.cs" />
+    <Compile Include="Assets\Assets\Scripts\UI\UGuiGroupHelper.cs" />
+    <Compile Include="Assets\Assets\Scripts\UI\UIExtension.cs" />
+    <Compile Include="Assets\Assets\Scripts\UI\UIFormId.cs" />
     <Compile Include="Assets\Assets\Scripts\Utility\AssetUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets\Configs\DefaultConfig.txt" />
+    <None Include="Assets\Assets\Configs\DefaultDictionary.xml" />
+    <None Include="Assets\Assets\DataTables\Scene.txt" />
+    <None Include="Assets\Assets\DataTables\UIForm.txt" />
+    <None Include="Assets\Assets\Localization\ChineseSimplified\Dictionaries\Default.xml" />
+    <None Include="Assets\Assets\Localization\ChineseTraditional\Dictionaries\Default.xml" />
+    <None Include="Assets\Assets\Localization\English\Dictionaries\Default.xml" />
+    <None Include="Assets\Assets\Localization\Korean\Dictionaries\Default.xml" />
     <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
     <None Include="Assets\GameFramework\Libraries\link.xml" />
     <None Include="C:\Users\Ralphy\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />

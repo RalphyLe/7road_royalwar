@@ -32,7 +32,7 @@ namespace RoyalWar
 
             GameEntry.Event.Subscribe(LoadSceneSuccessEventArgs.EventId, OnLoadSceneSuccess);
             GameEntry.Event.Subscribe(LoadSceneFailureEventArgs.EventId, OnLoadSceneFailure);
-            GameEntry.Event.Subscribe(LoadSceneUpdateEventArgs.EventId, OnLoadSceneDependencyAsset);
+            GameEntry.Event.Subscribe(LoadSceneUpdateEventArgs.EventId, OnLoadSceneUpdate);
             GameEntry.Event.Subscribe(LoadSceneDependencyAssetEventArgs.EventId, OnLoadSceneDependencyAsset);
 
             //隐藏所有实体
@@ -50,6 +50,7 @@ namespace RoyalWar
             GameEntry.Base.ResetNormalGameSpeed();
 
             int sceneId = procedureOwner.GetData<VarInt>(Constant.ProcedureData.NextSceneId).Value;
+            Log.Info("next scene id is :{0}", sceneId);
             m_ChangeToMenu = (sceneId == MenuSceneId);
             IDataTable<DRScene> dtScene = GameEntry.DataTable.GetDataTable<DRScene>();
 
@@ -62,6 +63,7 @@ namespace RoyalWar
             }
 
             GameEntry.Scene.LoadScene(AssetUtility.GetSceneAsset(drScene.AssetName), Constant.AssetPriority.SceneAsset, this);
+            Log.Info("scene assetname {0}", drScene.AssetName);
             m_BackgroundMusicId = drScene.BackgroundMusicId;
         }
 
@@ -69,7 +71,7 @@ namespace RoyalWar
         {
             GameEntry.Event.Unsubscribe(LoadSceneSuccessEventArgs.EventId, OnLoadSceneSuccess);
             GameEntry.Event.Unsubscribe(LoadSceneFailureEventArgs.EventId, OnLoadSceneFailure);
-            GameEntry.Event.Unsubscribe(LoadSceneUpdateEventArgs.EventId, OnLoadSceneDependencyAsset);
+            GameEntry.Event.Unsubscribe(LoadSceneUpdateEventArgs.EventId, OnLoadSceneUpdate);
             GameEntry.Event.Unsubscribe(LoadSceneDependencyAssetEventArgs.EventId, OnLoadSceneDependencyAsset);
             base.OnLeave(procedureOwner, isShutdown);
         }
@@ -90,19 +92,55 @@ namespace RoyalWar
             }
         }
 
+        private void OnLoadSceneUpdate(object sender, GameEventArgs e)
+        {
+            LoadSceneUpdateEventArgs ne = (LoadSceneUpdateEventArgs)e;
+            if (ne.UserData != this)
+            {
+                return;
+            }
+
+            Log.Info("Load scene '{0}' update, progress '{1}'.", ne.SceneAssetName, ne.Progress.ToString("P2"));
+        }
+
         private void OnLoadSceneDependencyAsset(object sender, GameEventArgs e)
         {
-            throw new NotImplementedException();
+            LoadSceneDependencyAssetEventArgs ne = (LoadSceneDependencyAssetEventArgs)e;
+            if (ne.UserData != this)
+            {
+                return;
+            }
+
+            Log.Info("Load scene '{0}' dependency asset '{1}', count '{2}/{3}'.", ne.SceneAssetName, ne.DependencyAssetName, ne.LoadedCount.ToString(), ne.TotalCount.ToString());
         }
 
         private void OnLoadSceneFailure(object sender, GameEventArgs e)
         {
-            throw new NotImplementedException();
+            LoadSceneFailureEventArgs ne = (LoadSceneFailureEventArgs)e;
+            if (ne.UserData != this)
+            {
+                return;
+            }
+
+            Log.Error("Load scene '{0}' failure, error message '{1}'.", ne.SceneAssetName, ne.ErrorMessage);
         }
 
         private void OnLoadSceneSuccess(object sender, GameEventArgs e)
         {
-            throw new NotImplementedException();
+            LoadSceneSuccessEventArgs ne = (LoadSceneSuccessEventArgs)e;
+            if (ne.UserData != this)
+            {
+                return;
+            }
+
+            Log.Info("Load scene '{0}' OK.", ne.SceneAssetName);
+
+            //if (m_BackgroundMusicId > 0)
+            //{
+            //    GameEntry.Sound.PlayMusic(m_BackgroundMusicId);
+            //}
+
+            m_IsChangeSceneComplete = true;
         }
     }
 }
