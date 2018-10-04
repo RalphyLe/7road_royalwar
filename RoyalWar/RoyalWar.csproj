@@ -336,7 +336,10 @@
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedureMenu.cs" />
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedurePreload.cs" />
     <Compile Include="Assets\Assets\Scripts\Procedure\ProcedureSplash.cs" />
+    <Compile Include="Assets\Assets\Scripts\UI\DialogForm.cs" />
+    <Compile Include="Assets\Assets\Scripts\UI\DialogParams.cs" />
     <Compile Include="Assets\Assets\Scripts\UI\EnterForm.cs" />
+    <Compile Include="Assets\Assets\Scripts\UI\MainForm.cs" />
     <Compile Include="Assets\Assets\Scripts\UI\UGUiForm.cs" />
     <Compile Include="Assets\Assets\Scripts\UI\UGuiGroupHelper.cs" />
     <Compile Include="Assets\Assets\Scripts\UI\UIExtension.cs" />

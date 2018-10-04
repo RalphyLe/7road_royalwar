@@ -18,7 +18,7 @@ namespace  RoyalWar
 
         public void OnStartButtonClick()
         {
-
+            m_procedureMenu.StartGame();
         }
 
         public void OnSettingButtonClick()

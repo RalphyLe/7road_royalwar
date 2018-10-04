@@ -13,6 +13,11 @@
         EnterForm = 1,
 
         /// <summary>
+        /// 战场UI
+        /// </summary>
+        MainForm = 2,
+
+        /// <summary>
         /// 主菜单。
         /// </summary>
         MenuForm = 100,

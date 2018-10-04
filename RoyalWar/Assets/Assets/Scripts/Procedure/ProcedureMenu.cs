@@ -55,7 +55,7 @@ namespace RoyalWar
             {
                 procedureOwner.SetData<VarInt>(Constant.ProcedureData.NextSceneId, GameEntry.Config.GetInt("Scene.Main"));
                 //procedureOwner.SetData<VarInt>(Constant.ProcedureData.GameMode, (int)GameMode.Survival);
-                //ChangeState<ProcedureChangeScene>(procedureOwner);
+                ChangeState<ProcedureChangeScene>(procedureOwner);
             }
         }
 
