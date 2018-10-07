@@ -317,6 +317,7 @@
   <ItemGroup>
     <None Include="Assets\Assets\Configs\DefaultConfig.txt" />
     <None Include="Assets\Assets\Configs\DefaultDictionary.xml" />
+    <None Include="Assets\Assets\DataTables\Entity.txt" />
     <None Include="Assets\Assets\DataTables\Scene.txt" />
     <None Include="Assets\Assets\DataTables\UIForm.txt" />
     <None Include="Assets\Assets\Localization\ChineseSimplified\Dictionaries\Default.xml" />

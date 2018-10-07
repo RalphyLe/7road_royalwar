@@ -60,7 +60,7 @@ namespace RoyalWar
                     return;
                 }
             }
-            var config = GameEntry.Config;
+            //var config = GameEntry.Config;
             //Log.Info("Scene.Enter {0}", GameEntry.Config.GetInt("Scene.Enter"));
             procedureOwner.SetData<VarInt>(Constant.ProcedureData.NextSceneId, GameEntry.Config.GetInt("Scene.Enter"));
             ChangeState<ProcedureChangeScene>(procedureOwner);
@@ -77,6 +77,8 @@ namespace RoyalWar
             Log.Info(AssetUtility.GetDataTableAsset("Scene"));
             LoadDataTable("UIForm");
             Log.Info(AssetUtility.GetDataTableAsset("UIForm"));
+            LoadDataTable("Entity");
+            Log.Info(AssetUtility.GetDataTableAsset("Entity"));
 
             // Preload dictionaries
             LoadDictionary("Default");

@@ -1,4 +1,5 @@
 ﻿using UnityGameFramework.Runtime;
+using GameFramework;
 
 namespace RoyalWar
 {

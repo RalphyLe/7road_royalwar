@@ -11,6 +11,8 @@ namespace RoyalWar
     public class MainForm : UGuiForm
     {
         public Text m_Timer;
+        public Transform SoldierItemInstanceRoot;
+        public Transform WarlordItemInstanceRoot;
         private ProcedureMain m_procedureMain = null;
         private int timer = 180;
 #if UNITY_2017_3_OR_NEWER
@@ -29,6 +31,7 @@ namespace RoyalWar
             }
 
             InvokeRepeating("Timer", 1.0f, 1.0f);
+            //LoadSoldierSpirit();
             //m_QuitButton.SetActive(Application.platform != RuntimePlatform.IPhonePlayer);
         }
 
@@ -42,6 +45,34 @@ namespace RoyalWar
             }
             TimeSpan ts = new TimeSpan(0, 0, timer);
             m_Timer.text = ts.Minutes+":"+ts.Seconds;
+        }
+
+        public void LoadSoldierSpirit()
+        {
+            int num = 6;
+            SoldierComponent soldierComponent = GameEntry.Soldier;
+            if (soldierComponent == null)
+            {
+                Log.Info("soldier组件为空");
+            }
+            soldierComponent.SoldierItemInstanceRoot = this.SoldierItemInstanceRoot;
+
+            for (int i = 0; i < num; i++)
+            {
+                soldierComponent.ShowSoldierItem((SoldierType)i);
+            }
+        }
+
+        public void LoadWarlordSpirit()
+        {
+            int num = 2;
+            WarlordComponent warlordComponent = GameEntry.Warlord;
+            warlordComponent.WarlordItemInstanceRoot = this.WarlordItemInstanceRoot;
+
+            for(int i = 0; i< num; i++)
+            {
+                warlordComponent.ShowWarlordItem();
+            }
         }
     }
 }
